@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head lang="ro">
+        <meta charset="utf-8">
+        <title>Home</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script>
+            window.addEventListener("load", function(){
+               document.getElementById("logo").addEventListener("click",function(){
+                   window.open("#home", "_self");
+               });
+            });
+        </script>
+    </head>
+    <body>
+        <!-- Menu declaration -->
+        <nav id="menu">
+            <img src="images/logo.png" id="logo" alt="logo">
+            <a href="#home" class="menu-btn">Home</a>
+            <a href="#dogs" class="menu-btn">Dogs</a>
+            <a href="#gallery" class="menu-btn">Gallery</a>
+        </nav>
+        
+        <!--Page content -->
+        <div id="content">
+            <article class="home-article">
+                <h1>Dog of the week</h1>
+                <p>Some text about it.</p>                
+                <img src="images/dog-home.jpg" class="article-img" alt="logo">
+            </article>
+
+            <article class="home-article">
+                <h1>Dog of the week</h1>
+                <p>Some text about it.</p>
+                <img src="images/dog-home.jpg" class="article-img" alt="logo">
+            </article>
+
+            <article class="home-article">
+                <h1>Dog of the week</h1>
+                <p>Some text about it.</p>
+                <img src="images/dog-home.jpg" class="article-img" alt="logo">
+            </article>
+            
+            <!--Footer -->
+            <footer>
+                <p>Pavel Stefan &copy; 2016</p>
+            </footer>
+        </div>
+    </body>
+</html>
