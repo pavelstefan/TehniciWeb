@@ -22,6 +22,11 @@ body{
     font-size: 20px;
     overflow: hidden;
     box-shadow: 0px 10px 15px #888888;
+    opacity: 1;
+}
+
+.active{
+    background-color: orange;
 }
 
 #menu-toggle{
@@ -78,11 +83,11 @@ footer{
 
 /*style for home article*/
 .article-img{
-    float: right;
-    margin-top: -106px;
+    float: left;
     display: inline;
     width: auto;
-    height: 305px;
+    height: 233px;
+    margin-right: 10px;
 }
 
 .article-head{
@@ -90,7 +95,7 @@ footer{
 }
 
 .article-text{
-    margin-left: 5%;
+    margin-left: 4%;
 }
 
 .home-article{
@@ -99,4 +104,13 @@ footer{
     margin-bottom: 20px;
     background-color: darkorange;
     overflow: hidden;
+}
+
+/*style for image gallery*/
+.galleryImg{
+    z-index: 1;
+    width: 30%;
+    height: auto;
+    margin: 5px;
+    margin-left: 2%;
 }

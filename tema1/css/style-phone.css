@@ -14,12 +14,12 @@ body{
 #menu{
     opacity: 0;
     position: fixed;
-    margin-top:40%;
     margin-left: 5%;
     width: 90%;
+    max-height: 40%;
     text-align: center;
     background-color: darkorange;
-    font-size: 20px;
+    font-size: 3em;
     overflow: hidden;
 }
 
@@ -93,7 +93,6 @@ footer{
 /*style for home article*/
 .article-img{
     float: bottom;
-    margin-top: 206px;
     display: block;
     width: 100%;
     height: 210px;
@@ -105,4 +104,12 @@ footer{
     margin-bottom: 20px;
     background-color: darkorange;
     overflow: hidden;
+}
+
+/*style for image gallery*/
+.galleryImg{
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    margin: 5px;
 }
