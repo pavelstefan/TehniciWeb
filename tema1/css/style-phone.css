@@ -16,11 +16,11 @@ body{
     position: fixed;
     margin-left: 5%;
     width: 90%;
-    max-height: 40%;
+    max-height: 60%;
     text-align: center;
     background-color: darkorange;
     font-size: 3em;
-    overflow: hidden;
+    overflow: visible;
 }
 
 #menu-bg{
@@ -65,8 +65,42 @@ body{
     
 }
 
+.menu-btn a{
+    text-decoration: none;
+    color: black;
+}
+
 .menu-btn:hover{
     background-color: orange;
+}
+
+#dropdown-content{
+    position: absolute;
+    margin-top: 7px;
+    text-align: left;
+    visibility: hidden;
+    font-size: 3em;
+}
+
+.ceva{
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.menu-btn:hover #dropdown-content{
+    text-align: center;
+    font-size: 3em;
+    position: static;
+    visibility: visible;
+    color: black;
+}
+
+.menu-btn:hover #dropdown-content .ceva:hover{
+    position: static;
+    visibility: visible;
+    color: black;
+    background-color: darkorange;
 }
 
 /*footer*/

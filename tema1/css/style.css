@@ -20,7 +20,7 @@ body{
     text-align: center;
     background-color: darkorange;
     font-size: 20px;
-    overflow: hidden;
+    overflow: visible;
     box-shadow: 0px 10px 15px #888888;
     opacity: 1;
 }
@@ -50,14 +50,46 @@ body{
 
 .menu-btn{    
     padding: 13px;
-    display: inline-block;
+    display: inline-flex;
     text-decoration: none;
     color: black;
-    
+    text-align: center; 
+}
+
+.menu-btn a{
+    text-decoration: none;
+    color: black;
 }
 
 .menu-btn:hover{
     background-color: orange;
+}
+
+#dropdown-content{
+    position: absolute;
+    margin-top: 37px;
+    text-align: left;
+    visibility: hidden;
+}
+
+.ceva{
+    margin-left: -40px;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.menu-btn:hover #dropdown-content{
+    position: static;
+    visibility: visible;
+    color: black;
+}
+
+.menu-btn:hover #dropdown-content .ceva:hover{
+    position: static;
+    visibility: visible;
+    color: black;
+    background-color: darkorange;
 }
 
 /*footer*/

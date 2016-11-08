@@ -23,10 +23,18 @@
         <img src="images/menu-toggle.png" id="menu-toggle" alt="menu-toggle">
         <div id="menu-bg"></div>
         <nav id="menu">            
-            <img src="images/logo.png" id="logo" alt="logo">
-            <a href="index.html" class="menu-btn">Home</a>
-            <a href="dogs.html" class="menu-btn">Dogs</a>
-            <a href="gallery.html" class="menu-btn active">Gallery</a>
+            <img src="images/logo.png" id="logo" alt="logo" onclick="toogleMenu()">
+            <div class="menu-btn active"><a href="index.html" onclick="toogleMenu()">Home</a></div>
+            <div class="menu-btn"><a href="gallery.html" onclick="toogleMenu()">Gallery</a></div>
+            <div id="dropdown" class="menu-btn"><a href="quiz.html" onclick="toogleMenu()">Quiz</a></div>
+            <div class="menu-btn">
+                <a href="dogs.html" onclick="toogleMenu()">Dogs</a>
+                <div id="dropdown-content">
+                    <a href="dogs.html#mici" class="ceva" onclick="toogleMenu()">mici</a>
+                    <a href="dogs.html#medii" class="ceva" onclick="toogleMenu()">medii</a>
+                    <a href="dogs.html" class="ceva" onclick="toogleMenu()">mari</a>
+                </div>
+            </div>
         </nav>
         
         <!--Page content -->

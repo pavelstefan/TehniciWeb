@@ -1,6 +1,11 @@
 /*Menu toggle*/
 window.addEventListener("load", function(){
     document.getElementById("menu-toggle").addEventListener("click", toggleMenu);
+    document.getElementById("menu-bg").addEventListener("click", function(){
+        if(menuVsible)
+            toggleMenu();
+    });
+    document.getElementById("dropdown-content").addEventListener("click", toggleMenu);
     if(window.innerWidth <= 1000)
         menu.style.zIndex = "-100"; 
 })

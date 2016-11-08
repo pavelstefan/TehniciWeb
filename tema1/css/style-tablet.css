@@ -70,6 +70,40 @@ body{
     background-color: orange;
 }
 
+.menu-btn a{
+    text-decoration: none;
+    color: black;
+}
+
+#dropdown-content{
+    position: absolute;
+    margin-top: 20px;
+    text-align: left;
+    visibility: hidden;
+    font-size: 3em;
+}
+
+.ceva{
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.menu-btn:hover #dropdown-content{
+    text-align: center;
+    font-size: 3em;
+    position: static;
+    visibility: visible;
+    color: black;
+}
+
+.menu-btn:hover #dropdown-content .ceva:hover{
+    position: static;
+    visibility: visible;
+    color: black;
+    background-color: darkorange;
+}
+
 /*footer*/
 footer{
     width: 100%;

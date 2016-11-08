@@ -23,10 +23,18 @@
         <img src="images/menu-toggle.png" id="menu-toggle" alt="menu-toogle">
         <div id="menu-bg"></div>
         <nav id="menu">            
-            <img src="images/logo.png" id="logo" alt="logo">
-            <a href="index.html" class="menu-btn">Home</a>
-            <a href="dogs.html" class="menu-btn active">Dogs</a>
-            <a href="gallery.html" class="menu-btn">Gallery</a>
+            <img src="images/logo.png" id="logo" alt="logo" onclick="toogleMenu()">
+            <div class="menu-btn active"><a href="index.html" onclick="toogleMenu()">Home</a></div>
+            <div class="menu-btn"><a href="gallery.html" onclick="toogleMenu()">Gallery</a></div>
+            <div id="dropdown" class="menu-btn"><a href="quiz.html" onclick="toogleMenu()">Quiz</a></div>
+            <div class="menu-btn">
+                <a href="dogs.html" onclick="toogleMenu()">Dogs</a>
+                <div id="dropdown-content">
+                    <a href="dogs.html#mici" class="ceva">mici</a>
+                    <a href="dogs.html#medii" class="ceva">medii</a>
+                    <a href="dogs.html" class="ceva">mari</a>
+                </div>
+            </div>
         </nav>
         
         
@@ -37,24 +45,6 @@
                 
                 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Japaneseakita.jpg" class="article-img" alt="Akita">
                 <p class="article-text">The Akitais a large breed of dog originating from the mountainous northern regions of Japan. There are two separate varieties of Akita: a Japanese strain, commonly called "Akita ken" in Japan, "Akita Inu" ("inu" means "dog" in Japanese), or "Japanese Akita"; and an American strain, known as the "Akita" or "American Akita". The Japanese strain called the Great Japanese dog comes in a narrow palette of colors, with all other colors considered atypical of the breed, while the American strain known simply as the akita comes in all dog colors.</p>
-            </article>
-
-            <article class="home-article">
-                <h1 class="article-head">Australian Shepard</h1>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Australian_Shepherd_Blue_Merle.jpg" class="article-img" alt="Australian Shepard">
-                <p class="article-text">The Australian Shepherd is a medium-sized breed of dog that was developed on the ranches in the Western United States. Despite its name, the breed was not developed in Australia, but rather in the United States, where they were seen in the West as early as the 19th century. The breed rose gradually in popularity with the boom of Western riding after World War II. They became known to the general public through rodeos, horse shows, and Disney movies made for television.</p>
-            </article>
-
-            <article class="home-article">
-                <h1 class="article-head">Pug</h1>
-                <img src="images/dog-home.jpg" class="article-img" alt="Pug">
-                <p class="article-text">The Pug is a breed of dog with a wrinkly, short-muzzled face, and curled tail. The breed has a fine, glossy coat that comes in a variety of colours, most often fawn or black, and a compact square body with well-developed muscles.</p>
-            </article>
-            
-            <article class="home-article">
-                <h1 class="article-head">Beagle</h1>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Beagle_Upsy.jpg" class="article-img" alt="Beagle">
-                <p class="article-text">The Beagle is a breed of small-sized hound, similar in appearance to the much larger foxhound. The Beagle is a scent hound, developed primarily for hunting hare. With a great sense of smell and their tracking instinct, the Beagle is employed as detection dog for prohibited agricultural imports and foodstuffs in quarantine around the world. The Beagle is intelligent but single-minded. It is a popular pet due to its size, good temper, and lack of inherited health problems.</p>
             </article>
             
             <article class="home-article">
@@ -70,10 +60,45 @@
             </article>
             
             <article class="home-article">
-                <h1 class="article-head">Dog of the week</h1>
+                <h1 class="article-head">Golden Retriever</h1>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Golden_Retriever_Carlos_%2810581910556%29.jpg" class="article-img" alt="Golden-Retriever">
                 <p class="article-text">The Golden Retriever is a large-sized breed of dog bred as gun dogs to retrieve shot waterfowl such as ducks and upland game birds during hunting and shooting parties, and were named 'retriever' because of their ability to retrieve shot game undamaged. Golden Retrievers have an instinctive love of water, and are easy to train to basic or advanced obedience standards.</p>
             </article>
+
+            <article class="home-article">
+                <h1 class="article-head">Australian Shepard</h1>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Australian_Shepherd_Blue_Merle.jpg" class="article-img" alt="Australian Shepard">
+                <p class="article-text">The Australian Shepherd is a medium-sized breed of dog that was developed on the ranches in the Western United States. Despite its name, the breed was not developed in Australia, but rather in the United States, where they were seen in the West as early as the 19th century. The breed rose gradually in popularity with the boom of Western riding after World War II. They became known to the general public through rodeos, horse shows, and Disney movies made for television.</p>
+                <div id="medii"></div>
+            </article>
+            
+            <article class="home-article">
+                <h1 class="article-head">Beagle</h1>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Beagle_Upsy.jpg" class="article-img" alt="Beagle">
+                <p class="article-text">The Beagle is a breed of small-sized hound, similar in appearance to the much larger foxhound. The Beagle is a scent hound, developed primarily for hunting hare. With a great sense of smell and their tracking instinct, the Beagle is employed as detection dog for prohibited agricultural imports and foodstuffs in quarantine around the world. The Beagle is intelligent but single-minded. It is a popular pet due to its size, good temper, and lack of inherited health problems.</p>
+            </article>
+            
+            <article class="home-article">
+                <h1 class="article-head">Bull Terrier</h1>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Bull_terrier_2.jpg" class="article-img" alt="Bull-Terrier">
+                <p class="article-text">The Bull Terrier is a breed of dog in the terrier family. There is also a miniature version of this breed which is officially known as the Miniature Bull Terrier.</p>
+                <div id="mici"></div>
+            </article>
+            
+            <article class="home-article">
+                <h1 class="article-head">Pug</h1>
+                <img src="images/dog-home.jpg" class="article-img" alt="Pug">
+                <p class="article-text">The Pug is a breed of dog with a wrinkly, short-muzzled face, and curled tail. The breed has a fine, glossy coat that comes in a variety of colours, most often fawn or black, and a compact square body with well-developed muscles.</p>
+            </article>
+            
+            <article class="home-article">
+                <h1 class="article-head">Teckel</h1>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Short-haired-Dachshund.jpg" class="article-img" alt="Teckel">
+                <p class="article-text">The standard size dachshund was developed to scent, chase, and flush out badgers and other burrow-dwelling animals, while the miniature dachshund was bred to hunt smaller prey such as rabbits. In the United States, they have also been used to track wounded deer and hunt prairie dogs.</p>
+            </article>
+
+            
+            
             
             <!--Footer -->
             <footer>
