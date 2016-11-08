@@ -6,8 +6,11 @@ window.addEventListener("load", function(){
             toggleMenu();
     });
     document.getElementById("dropdown-content").addEventListener("click", toggleMenu);
-    if(window.innerWidth <= 1000)
+    if(window.innerWidth <= 1000){
         menu.style.zIndex = "-100"; 
+        document.getElementById("menu-bg").style.zIndex = "-100";
+    }
+        
 })
 
 window.addEventListener("resize", function(){
@@ -60,9 +63,18 @@ function toggleMenu(){
     timeline.addKeyframe(frame1);
     timeline2.addKeyframe(frame2);
     timeline.renderAnimation(function(){
-        if(menu.style.opacity == 0)
+        if(menu.style.opacity == 0){
             menu.style.zIndex = "-100";
+            bg.style.zIndex = "-100";
+        }
+            
     });
     timeline2.renderAnimation();
     
+}
+
+function check(id, ans){
+    var a1 = document.getElementById(id+1);
+    var a2 = document.getElementById(id+2);
+    var a3 = document.getElementById(id+3);
 }

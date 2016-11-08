@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="css/style.css"  media="screen and (min-width: 1001px)">
+        <link rel="stylesheet" href="css/style-tablet.css"  media="screen and (max-width: 1000px)">
+        <link rel="stylesheet" href="css/style-phone.css"  media="screen and (max-width: 600px)">
+        
+        <script src="js/AnimateJS.js"></script>
+        <script src="js/app.js"></script>
+        <script>
+            window.addEventListener("load", function(){
+               document.getElementById("logo").addEventListener("click",function(){
+                   window.open("index.html", "_self");
+               });
+            });
+        </script>
+    </head>
+    <body>
+        <!-- Menu declaration -->
+        <img src="images/menu-toggle.png" id="menu-toggle" alt="menu-toogle">
+        <div id="menu-bg"></div>
+            
+        <nav id="menu">            
+            <img src="images/logo.png" id="logo" alt="logo" onclick="toogleMenu()">
+            <div class="menu-btn"><a href="index.html" onclick="toogleMenu()">Home</a></div>
+            <div class="menu-btn"><a href="gallery.html" onclick="toogleMenu()">Gallery</a></div>
+            <div class="menu-btn active"><a href="quiz.html" onclick="toogleMenu()">Quiz</a></div>
+            <div class="menu-btn">
+                <a href="dogs.html" onclick="toogleMenu()">Dogs</a>
+                <div id="dropdown-content">
+                    <a href="dogs.html#mici" class="ceva">mici</a>
+                    <a href="dogs.html#medii" class="ceva">medii</a>
+                    <a href="dogs.html" class="ceva">mari</a>
+                </div>
+            </div>
+        </nav>
+        
+        <div id="content">
+            <div class="question">
+                <form>
+                    <p class="question-txt">Cate picioare are un caine?</p>
+                    <label><input type="radio" name="a" id="a1">1</label><br/>
+                    <label><input type="radio" name="a" id="a2">4</label><br/>
+                    <label><input type="radio" name="a" id="a3">6</label><br/>
+                    <input type="button" value="check" onclick="check('a', 2)">
+                </form>
+            </div>
+            
+            <div class="question">
+                <form>
+                    <p class="question-txt">Cati ochi are un caine?</p>
+                    <label><input type="radio" name="b" id="b1">2</label><br/>
+                    <label><input type="radio" name="b" id="b2">10</label><br/>
+                    <label><input type="radio" name="b" id="b3">0</label><br/>
+                    <input type="button" value="check" onclick="check('b', 1)">
+                </form>
+            </div>
+            
+            <div class="question">
+                <form>
+                    <p class="question-txt">Un caine are...</p>
+                    <label><input type="radio" name="c" id="c1">blana</label><br/>
+                    <label><input type="radio" name="c" id="c2">coarne</label><br/>
+                    <label><input type="radio" name="c" id="c3">solzi</label><br/>
+                    <input type="button" value="check" onclick="check('c', 1)">
+                </form>
+            </div>
+            
+            <!--Footer -->
+            <footer>
+                <p>Pavel Stefan &copy; 2016</p>
+            </footer>
+        </div>
+    </body>
+</html>
