@@ -44,9 +44,42 @@ body{
     width: auto;
     position: fixed;
     left: 0;
-    top: 0;
+    margin-top: 0px;
     padding-left: 10px;
     cursor: pointer;
+}
+
+#logo{
+    animation: anim 1s ease-in infinite alternate;
+    -webkit-animation: anim 1s ease-in infinite alternate;
+    -moz-animation: anim 1s ease-in infinite alternate;
+}
+
+@keyframes anim{
+    from{
+        padding-left: 10px;
+    }
+    to{
+        padding-left: 25px;
+    }
+}
+
+@-webkit-keyframes anim{
+    from{
+        padding-left: 10px;
+    }
+    to{
+        padding-left: 25px;
+    }
+}
+
+@-moz-keyframes anim{
+    from{
+        padding-left: 10px;
+    }
+    to{
+        padding-left: 25px;
+    }
 }
 
 .menu-btn{    
